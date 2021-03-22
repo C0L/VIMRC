@@ -18,18 +18,10 @@ set ruler                       " Show which line I am on.
 set showmatch                   " Check matching delims () {} []
 set incsearch                   " Incremental searching.
 set bs=2                        " Fix backspacing in insert mode.
-"set textwidth=80
-"set colorcolumn=80
 
-" Expand tabs in C files to spaces.
-au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py} set expandtab
-au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py} set shiftwidth=2
-au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py} set tabstop=2
-
-" Tex files expand tabs
-au BufRead,BufNewFile *.{tex} set expandtab
-au BufRead,BufNewFile *.{tex} set shiftwidth=4
-au BufRead,BufNewFile *.{tex} set tabstop=4
+au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex} set expandtab
+au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex} set shiftwidth=2
+au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex} set tabstop=2
 
 " Expand tabs in README files to spaces.
 au BufRead,BufNewFile README set expandtab
@@ -55,6 +47,4 @@ colorscheme gruvbox
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-"match ErrorMsg '\%>80v.\+'  
 set clipboard=unnamed
