@@ -19,9 +19,9 @@ set showmatch                   " Check matching delims () {} []
 set incsearch                   " Incremental searching.
 set bs=2                        " Fix backspacing in insert mode.
 
-au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex} set expandtab
-au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex} set shiftwidth=2
-au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex} set tabstop=2
+au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex,html} set expandtab
+au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex,html} set shiftwidth=2
+au BufRead,BufNewFile *.{hs,go,c,h,java,cpp,py,tex,html} set tabstop=2
 
 " Expand tabs in README files to spaces.
 au BufRead,BufNewFile README set expandtab
